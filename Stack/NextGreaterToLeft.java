@@ -9,17 +9,17 @@ public class NextGreaterToLeft {
         Stack<Integer> st = new Stack<>();
 
         for(int i=0; i<arr.length; i++){
-            if(st.size()==0){
+            if(st.isEmpty()){
                 ans[i] = -1;
             }
-            else if(st.size()>0 && st.peek()>arr[i]){
+            else if(!st.isEmpty() && st.peek()>arr[i]){
                 ans[i] = st.peek();
             }
-            else if(st.size()>0 && st.peek()<=arr[i]){
-                while(st.size()>0 && st.peek()<=arr[i]){
+            else if(!st.isEmpty() && st.peek()<=arr[i]){
+                while(!st.isEmpty() && st.peek()<=arr[i]){
                     st.pop();
                 }
-                if(st.size()==0) {
+                if(st.isEmpty()) {
                     ans[i] = -1;
                 }
                 else{
@@ -31,3 +31,6 @@ public class NextGreaterToLeft {
         System.out.println(Arrays.toString(ans));
     }
 }
+
+
+

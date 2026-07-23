@@ -7,7 +7,7 @@ class dNode{
     }
 }
 public class DoublyLinkedList {
-    public static void print(dNode head){
+    static void print(dNode head){
         dNode temp = head;
         while(temp!=null){
             System.out.print(temp.val+" ");
@@ -16,7 +16,7 @@ public class DoublyLinkedList {
         System.out.println();
     }
 
-    public static void reverse(dNode tail){
+    static void reverse(dNode tail){
         dNode temp = tail;
         while(temp!=null){
             System.out.print(temp.val+" ");

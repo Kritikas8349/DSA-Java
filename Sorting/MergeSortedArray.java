@@ -30,7 +30,6 @@ public class MergeSortedArray {
 
         int[] arr = {1, 3, 5, 7, 9};
         int[] brr = {2, 4, 6, 8, 10};
-
         int[] crr = new int[arr.length + brr.length];
 
         merge(arr, brr, crr);

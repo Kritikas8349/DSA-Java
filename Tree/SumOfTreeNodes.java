@@ -1,3 +1,14 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+class Node {
+    int val;
+    Node left;
+    Node right;
+ 
+    Node(int var1) {
+       this.val = var1;
+    }
+ }
+ 
 public class SumOfTreeNodes {
 
     public static void main(String[] args) {

@@ -18,7 +18,7 @@ public class logPower {
         int a = sc.nextInt();
         System.out.print("Enetr b: ");
         int b = sc.nextInt();
-        System.out.print(a+" raised to the power "+b+" is: "+pow(a,b));
+        System.out.print(a+" raised to the power "+b+" is: "+pow2(a,b));
         sc.close();
     }
 }
